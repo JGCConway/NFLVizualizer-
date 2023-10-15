@@ -53,8 +53,30 @@ body{
 .home-content{
     color: #dedede;
     border: 1px solid #dedede;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: 12% 50% 50%;
     justify-items: center;
     align-items: center;
+}
+
+.Info-Table-Parent-1{
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+}
+
+.Info-Table-Child-1{
+    margin-bottom: 2vh;
+}
+
+.Info-Table-Child-1, .Info-Table-Child-2{
+    color: #dedede;
+    border: 1px solid #dedede;
+    width: 50vh;
+    text-align: center;
+}
+
+.Info-Table-Child-2{
+    margin-top: 5vh;
 }
