@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./dist/output.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
     <Nav class="topnav">
-        <ul>
-            <input type="text" placeholder="Search.." class="border-2 border-blue-500">
-            <li>Home</li>
-            <li>Favorites</li>
+        <ul class="Navigation-Options">
+            <input type="text" placeholder="Search.." class="search-bar">
+            <li><a class="Nav-Buttons" href="index.html">Home</li></a>
+            <li><a class="Nav-Buttons" href="favorite.html">Favorites</li></a>
         </ul>
     </Nav>
+
+    <div class="home-content">
+            <div class="grid-content">
+                <img src="pit.png" width="150vh">
+            </div>
+            <div class="grid-content">
+                <H1 id="team-name">Pittsburgh Steelers</H1>
+                <H3 id="team-age">Founded: July 8, 1933</H3>
+            </div>
+            <div class="grid-content">
+                <h2> Current Record: 
+                    <span id="CurrentWins">3 |</span> 
+                    <span id="CurrentLoses">2 |</span> 
+                    <span id="CurrentTies">0</span> </h2>
+            </div>
+
+    </div>  
+
+
 </body>
 </html>
