@@ -38,6 +38,7 @@ deede7 - Secondary Color
     background-color: #5ba464;
     color: #f4ebf3;
     font-size: large;
+    box-shadow: 0 10px 10px rgba(91, 164, 100, 0.3);
 }
 
 .search-bar:focus{
@@ -81,13 +82,6 @@ deede7 - Secondary Color
     align-items: center;
 }
 
-.Info-Table-Parent-1{
-    display: flex;
-    margin-top: 5vh;
-    flex-direction: column;
-    margin-left: 2vh;
-}
-
 #CurrentWins{
   color: green;
 }
@@ -96,37 +90,52 @@ deede7 - Secondary Color
   color: red;
 }
 
+#Record-Color-Correction, #CurrentTies{
+  color: black;
+}
 
-
-.Info-Table-Parent-2{
-    margin-left: 25vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.Info-Table-Parent-1{
+  display: flex;
+  margin-top: 9vh;
+  flex-direction: column;
+  margin-left: 2vh;
 }
 
 .Info-Table-Child-1{
     margin-bottom: 2vh;
 }
 
-.Info-Table-Child-1, .Info-Table-Child-2{
+.Info-Table-Child-1, .Info-Table-Child-2, .Info-Table-Child-3, .Info-Table-Child-4{
     color: #21121f;
-    border: 1px solid #21121f;
+    border: 3px solid #5ba464;
+    background: #deede7;
     width: 50vh;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(91, 164, 100, 0.3);
 }
 
 .Info-Table-Child-2{
     margin-top: 5vh;
 }
 
+.Info-Table-Child-3{
+  margin-top: 5vh;
+}
+
+.Info-Table-Child-4{
+  margin-top: 5vh;
+  border-spacing: 2vh;
+}
+
 .Team-Stats-Container {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 130vh;
-    background-color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 124vh;
+    background-color: #5ba464;
     border-radius: 10px;
+    border: 3px solid #5ba464;
+    box-shadow: 0 10px 10px rgba(91, 164, 100, 0.3);
   }
   .Container-Tabs {
     display: grid;
@@ -140,7 +149,7 @@ deede7 - Secondary Color
     font-weight: 600;
   }
   .tab-content {
-    background-color: #ffffff;
+    background-color: #deede7;
     padding: 50px 50px;
   }
   .tab-content h4 {
@@ -197,4 +206,5 @@ deede7 - Secondary Color
     background-color: #f4ebf3;
     padding-left: 5vh;
     padding-right: 5vh;
+    border-radius: 5px;
   }
