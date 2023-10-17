@@ -4,10 +4,20 @@
 
 body{
     margin: 0;
-    background-color: #050505;
+    background-color: #f4ebf3;
     min-height: 100%;
+    cursor:default;
 }
 
+
+/* 
+Colors of Choice (For Now):
+f4ebf3 - Background Color
+21121f - Text Color
+5ba464 - Primary Color
+deede7 - Secondary Color
+76a45b - Accent Color
+*/
 
 /* Navigation Header START */
 .topnav{
@@ -22,22 +32,26 @@ body{
 
 .search-bar{
     width: 160vh;
-    border:none;
     border-radius: 5px;
-    border:none;
+    border: 2px solid #5ba464;
     outline: none;
+    background-color: #5ba464;
+    color: #f4ebf3;
+    font-size: large;
 }
 
 .search-bar:focus{
     width: 160vh;
-    background-color: #dedede;
+    background-color: #deede7;
+    color: #21121f;
+    border: 2px solid #5ba464;
 }
 
 .Nav-Buttons{
     list-style: none;
     text-decoration: none;
     font-size: x-large;
-    color: #fafafa;
+    color: #21121f;
     padding: 7.5px;
     border-radius: 10px;
 }
@@ -46,8 +60,8 @@ body{
     list-style: none;
     text-decoration: none;
     font-size: x-large;
-    color: #050505;
-    background-color: #dedede;
+    color: #f4ebf3;
+    background-color: #5ba464;
     padding: 7.5px;
     border-radius: 15px;
 }
@@ -55,11 +69,11 @@ body{
     border-radius: 5px;
     height: 100%;
     display: flex;
-
+    justify-content:space-evenly
 
 }
 .Team-Info{
-    color: #dedede;
+  color: #5ba464;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 12% 50% 50%;
@@ -74,6 +88,16 @@ body{
     margin-left: 2vh;
 }
 
+#CurrentWins{
+  color: green;
+}
+
+#CurrentLosses{
+  color: red;
+}
+
+
+
 .Info-Table-Parent-2{
     margin-left: 25vh;
     margin-top: 5vh;
@@ -85,31 +109,31 @@ body{
 }
 
 .Info-Table-Child-1, .Info-Table-Child-2{
-    color: #dedede;
-    border: 1px solid #dedede;
+    color: #21121f;
+    border: 1px solid #21121f;
     width: 50vh;
     text-align: center;
+    border-radius: 10px;
 }
 
 .Info-Table-Child-2{
     margin-top: 5vh;
 }
 
-.container {
-    width: 80vmin;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 120px;
+.Team-Stats-Container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 130vh;
     background-color: #ffffff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
-  .tabs {
+  .Container-Tabs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
   h3 {
-    background-color: #e4e9fd;
+    background-color: #deede7;
     text-align: center;
     padding: 15px 0;
     cursor: pointer;
@@ -117,7 +141,7 @@ body{
   }
   .tab-content {
     background-color: #ffffff;
-    padding: 50px 40px;
+    padding: 50px 50px;
   }
   .tab-content h4 {
     font-size: 28px;
@@ -137,7 +161,40 @@ body{
   .tab-content .active {
     display: block;
   }
-  .tabs .active {
-    background-color: #ffffff;
-    color: #4d5bf9;
+  .Container-Tabs .active {
+    background-color: #5ba464;
+    color: #f4ebf3;
+  }
+
+  iframe{
+    border-radius: 10px;
+  }
+
+  /*Footer */ 
+
+  .Footer-Container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #5ba464;
+    color: #f4ebf3;
+  }
+
+  .footer-nav{
+    list-style:none;
+    text-decoration: none;
+  }
+  .footer-nav-option{
+    text-decoration: none;
+    color:#f4ebf3;
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  .footer-nav-option:hover{
+    text-decoration: none;
+    color:#5ba464;
+    background-color: #f4ebf3;
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
