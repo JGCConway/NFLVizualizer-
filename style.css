@@ -35,16 +35,17 @@ deede7 - Secondary Color
     border-radius: 5px;
     border: 2px solid #5ba464;
     outline: none;
-    background-color: #5ba464;
-    color: #f4ebf3;
+    background-color: #deede7;
+    color: #21121f;
     font-size: large;
     box-shadow: 0 10px 10px rgba(91, 164, 100, 0.3);
 }
 
 .search-bar:focus{
     width: 160vh;
-    background-color: #deede7;
+    background-color: #5ba464;
     color: #21121f;
+    color: #f4ebf3;
     border: 2px solid #5ba464;
 }
 
@@ -131,7 +132,7 @@ deede7 - Secondary Color
 .Team-Stats-Container {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 124vh;
+    width: 130vh;
     background-color: #5ba464;
     border-radius: 10px;
     border: 3px solid #5ba464;
