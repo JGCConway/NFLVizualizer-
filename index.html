@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <Nav class="topnav">
+    <Nav class="topnav"><!--Search, Home, and Favorites Components-->
         <ul class="Navigation-Options">
             <input type="text" placeholder="Search.." class="search-bar">
             <li><a class="Nav-Buttons" href="index.html">Home</li></a>
@@ -15,24 +15,28 @@
         </ul>
     </Nav>
 
-    <div class="home-content">
+    <div class="Team-Info"> <!--Team Information (Top)-->
             <div class="grid-content">
                 <img src="pit.png" width="150vh">
             </div>
             <div class="grid-content">
                 <H1 id="team-name">Pittsburgh Steelers</H1>
-                <H3 id="team-age">Founded: July 8, 1933</H3>
+                <H4 id="team-age">Founded: July 8, 1933</4>
             </div>
             <div class="grid-content">
                 <h2> Current Record: 
-                    <span id="CurrentWins">3 |</span> 
-                    <span id="CurrentLoses">2 |</span> 
+                    <span id="CurrentWins">3</span>
+                    <span id="Record-Color-Correction"> | </span>
+                    <span id="CurrentLosses">2</span>
+                    <span id="Record-Color-Correction"> | </span>
                     <span id="CurrentTies">0</span> </h2>
             </div>
     </div>
 
-    <div class="Info-Table-Parent-1">
-        <table class="Info-Table-Child-1">
+    <div class="Team-Content-Grandparent"> <!--Team Information Main Content (GrandParent)-->
+
+    <div class="Info-Table-Parent-1"><!--Team Information Main Content (Left Content)-->
+        <table class="Info-Table-Child-1"> <!-- Best Season-->
             <tr>
                 <th>Best Season:</th>
             </tr>
@@ -42,7 +46,7 @@
             </tr>
         </table>
 
-        <table class="Info-Table-Child-1">
+        <table class="Info-Table-Child-1"> <!-- Worst Season-->
             <tr>
                 <th>Worst Season:</th>
             </tr>
@@ -51,10 +55,8 @@
                 <td id="Worst-Season">1-13</td>
             </tr>
         </table>
-    </div>
 
-    <div class=" Info Table Parent-2">
-        <table class="Info-Table-Child-2">
+        <table class="Info-Table-Child-2"><!-- Past Names-->
             <tr>
                 <th>Past Names</th>
                 <th>Dates</th>
@@ -71,7 +73,7 @@
             </tr>
 
             <tr>
-                <td>Phil-Pitt "Steagles" (merger)</td>
+                <td>Phil-Pitt "Steagles" (Merger)</td>
                 <td>1943</td>
             </tr>
 
@@ -80,7 +82,142 @@
                 <td>1944</td>
             </tr>
         </table>
+
+        <table class="Info-Table-Child-3"><!-- Superbowl Appearances/Wins (InPROG)-->
+            <tr>
+                <th>Superbowl Appearances</th>
+                <th>Superbowl Wins</th>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th>AFC Championship Appearances</th>
+                <th>AFC Championship Wins</th>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>Divisional Apperances</th>
+                <th>Divisonal Wins</th>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>Wildcard Apperances</th>
+                <th>WildCard Wins</th>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <table class="Info-Table-Child-4"><!-- Superbowl Appearances/Wins (InPROG)-->
+            <tr class="table-records">
+                <th>Record Title</th>
+                <th>Holder</th>
+                <th>Record #</th>
+            </tr>
+            <tr>
+                <td>Passing Leader</td>
+                <td>Ben Roethlisberger</td>
+                <td>5,440/8,443 | 64,088 Yards | 418 TDs</td>
+            </tr>
+            <tr>
+                <td>Rushing Leader</td>
+                <td>Franco Harris</td>
+                <td>2881 Attempts | 11,950 Yards | 91 TDs</td>
+            </tr>
+            <tr>
+                <td>Recieving Leader</td>
+                <td>Hines Ward</td>
+                <td>1000 Receptions | 12,083 Yards | 85 TDs</td>
+            </tr>
+            <tr>
+                <td>Scoring Leader</td>
+                <td>Gary Anderson</td>
+                <td>1,343 Total Points Scored</td>
+            </tr>
+            <tr>
+                <td>Interceptions Leader</td>
+                <td>Mel Blount</td>
+                <td>57 Interceptions | 736 Yards | 2 TDs</td>
+            </tr>
+            <td>Tackles Leader</td>
+            <td>James Farrior</td>
+            <td>740 Tackles | 345 Assisted Tackles</td>
+        </tr>
+    </tr>
+    <td>Force Fumbles Leader</td>
+    <td>James Harrison</td>
+    <td>33 Forced Fumbles</td>
+</tr>
+        </table><!--Record Holders (TODO)-->
+
+        <a href="favorite.html" class="Next-Team-Button">Next Team</a>
     </div>
+
+    <div class="Team-Stats-Container"><!--Team Information Main Content (Charts and Tabs)-->
+        <div class="Container-Tabs">
+          <h3 class="active">Wins and Losses</h3>
+          <h3>Passing Yards</h3>
+          <h3>Rushing Yards</h3>
+          <h3>Defensive Yards</h3>
+          <h3>Kick/Punt Return Yards</h3>
+        </div>
+        <div class="tab-content">
+          <div>
+            <h2>Team Stats:</h2>
+            <iframe width="1100" height="1000" scrolling="yes" frameborder="0" src="//plotly.com/~AllFreeLunch/1.embed"></iframe>
+          </div>
+          <div>
+            <h2>Team Stats:</h2>
+            <iframe width="1100" height="1000" scrolling="yes" frameborder="0" src="//plotly.com/~AllFreeLunch/1.embed"></iframe>
+          </div>
+          <div>
+            <h2>Team Stats:</h2>
+            <iframe width="1100" height="1000" scrolling="yes" frameborder="0" src="//plotly.com/~AllFreeLunch/1.embed"></iframe>
+          </div>
+          <div>
+            <h2>Team Stats:</h2>
+            <iframe width="1100" height="1000" scrolling="yes" frameborder="0" src="//plotly.com/~AllFreeLunch/1.embed"></iframe>
+          </div>
+          <div>
+            <h2>Team Stats:</h2>
+            <iframe width="1100" height="1000" scrolling="yes" frameborder="0" src="//plotly.com/~AllFreeLunch/1.embed"></iframe>
+          </div>
+        </div>
+      </div>
+</div>
+
+<footer class="Footer-Container"><!--Footer Components-->
+    <ul class="footer-nav">
+        <li><a class="footer-nav-option" href="mailto:jgcconway@gmail.com">Email Me</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">LinkedIn</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">Twitter</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">Instagram</a></li>
+    </ul>
+
+    <ul class="footer-nav">
+        <li><a class="footer-nav-option" href="mailto:jgcconway@gmail.com">Email Me</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">LinkedIn</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">Twitter</a></li>
+        <li><a class="footer-nav-option" href="https://linkedin.com">Instagram</a></li>
+    </ul>
+
+    <label class="Darkmode-switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+
+</footer>
+
+<script src="script.js"></script><!--Script-->
 
 </body>
 </html>
